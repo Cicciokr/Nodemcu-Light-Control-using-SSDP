@@ -1,12 +1,12 @@
- Autore: Diomede Mazzone con la collaborazione di Fabio Z Tessitore (@FabioZTessitore)
+Progetto "LightControl" di Francesco Pantisano realizzato utilizzando "Plant" di Diomede Mazzone con la collaborazione di Fabio Z Tessitore (@FabioZTessitore).
 
-Tag: NodeJS, ExpressJS, Socket.io, HTML 5, client/server, MongoDB, Arduino Yun
+Tag: NodeJS, ExpressJS, HTML 5, client/server, Simple Service Discovery Protocol (SSDP)
 
 Licenza: GPL 3.0 o successive
 
-#PLANT
+#LIGHTCONTROL
 
-questo pacchetto ha scopo didattico e si vogliono rappresentare le potenzialità di Node.js. A tal fine prevede uno script da lanciare su uno o più dispositivi IoT (nel nostro caso NodeMCU, che invia dati al server node, il quale li rappresenta sotto forma di grafico ad eventuali client collegati tramite web browser.
+questo pacchetto ha una parte di script Arduino da poter lanciare su tutte le vostre NodeMcu che volete e una parte applicativa realizzata con nodejs che gestisce le periferiche ed interagisce con loro utilizzando il protocollo SSDP che trovo veramente interessante per l'aspetto iot, evita di utilizzare/conoscere gli ip delle schede.
 
 il server ascolta sulla porta 3000 sia i client che inviano i dati sia quelli che li ricevono sotto forma di pagina web.
 
@@ -18,9 +18,8 @@ https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vc
 
 e poi, per comodita', abbiamo utilizzato l'ide di Arduino, debitamente onfigurato così come indicato nelle numerose guide on line.
 
-##Arduino Yun
-
-come ulteriore client utilizzato per la raccolta dei dati è stato utilizzato Arduino Yun.
+Per installare il mio script su nodemcu ho utilizzato Arduino IDE, se avete bisogno di maggiori informazioni contattatemi pure.
+https://www.arduino.cc/en/Main/Software
 
 ##Node.js
 
