@@ -6,17 +6,15 @@ Licenza: GPL 3.0 o successive
 
 #LIGHTCONTROL
 
-questo pacchetto ha una parte di script Arduino da poter lanciare su tutte le vostre NodeMcu che volete e una parte applicativa realizzata con nodejs che gestisce le periferiche ed interagisce con loro utilizzando il protocollo SSDP che trovo veramente interessante per l'aspetto iot, evita di utilizzare/conoscere gli ip delle schede.
+questo pacchetto ha una parte di script Arduino da poter lanciare su tutte le vostre NodeMcu e una parte applicativa realizzata con nodejs che gestisce le periferiche ed interagisce con loro utilizzando il protocollo SSDP che trovo veramente interessante per l'aspetto iot, evita di utilizzare/conoscere gli ip delle schede.
 
-il server ascolta sulla porta 3000 sia i client che inviano i dati sia quelli che li ricevono sotto forma di pagina web.
+Il server ascolta sulla porta 3000 sia i client che inviano i dati sia quelli che li ricevono sotto forma di pagina web.
 
 
 ##NodeMCU 
 
 per configurarlo bisogna prima scaricare i driver
-https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
-
-e poi, per comodita', abbiamo utilizzato l'ide di Arduino, debitamente onfigurato così come indicato nelle numerose guide on line.
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers e poi, per comodita', abbiamo utilizzato l'ide di Arduino, debitamente onfigurato così come indicato nelle numerose guide on line.
 
 Per installare il mio script su nodemcu ho utilizzato Arduino IDE, se avete bisogno di maggiori informazioni contattatemi pure.
 https://www.arduino.cc/en/Main/Software
@@ -30,7 +28,6 @@ per avviare il server bisogna procedere nel seguente modo:
 
 1. Scaricare e installare la versione idonea di node ed npm: https://nodejs.org/it/download/
 2. installare il framework express tramite il gestore dei pacchetti: npm intall express
-3. installare socket.io attraverso il gestore dei pacchetti: npm install socket.io
 
 è possibile anche configurare tutto tramite npm install, a patto che il file package.json sia aggiornato nelle dipendenze necessarie.
  
