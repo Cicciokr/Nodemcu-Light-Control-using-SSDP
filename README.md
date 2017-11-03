@@ -6,9 +6,15 @@ Licenza: GPL 3.0 o successive
 
 #LIGHTCONTROL
 
-questo pacchetto ha una parte di script Arduino da poter lanciare su tutte le vostre NodeMcu e una parte applicativa realizzata con nodejs che gestisce le periferiche ed interagisce con loro utilizzando il protocollo SSDP che trovo veramente interessante per l'aspetto iot, evita di utilizzare/conoscere gli ip delle schede.
+questo pacchetto ha una parte di script Arduino da poter lanciare su tutte le vostre NodeMcu e una parte applicativa realizzata con nodejs che gestisce le periferiche ed interagisce con loro utilizzando il protocollo SSDP che trovo veramente interessante per l'aspetto iot, evita di utilizzare/conoscere gli ip delle schede, ogni device connessione in rete espone una propria scheda identificativa, tramite le quale potete riconoscerlo e quindi interagirci.
 
-Il server ascolta sulla porta 3000 sia i client che inviano i dati sia quelli che li ricevono sotto forma di pagina web.
+SSDP.setHTTPPort(80);
+SSDP.setName("NodemcuLightOne");
+SSDP.setModelName("nodemcu");
+SSDP.setDeviceType("upnp:nodemculight");
+
+Il client nodejs è in ascolto sulla porta 3000.
+Il device nodemcu viene interrogato sulla porta 80.
 
 
 ##NodeMCU 
